@@ -1,0 +1,27 @@
+meta {
+  name: Read Ticket
+  type: http
+  seq: 7
+}
+
+get {
+  url: http://localhost:8081/tickets/296c201e-515e-4f0a-b153-78a0ea98b72a
+  body: none
+  auth: bearer
+}
+
+auth:bearer {
+  token: eyJhbGciOiJSUzI1NiIsInR5cCIgOiAiSldUIiwia2lkIiA6ICJKU2lvOWhVWmw4Qmk3Z1BHRXJ1dEpfLUJqbm9qeHFxRk9fZXo4cFJWc3djIn0.eyJleHAiOjE3NjgwMDgwNTYsImlhdCI6MTc2ODAwNzc1NiwiYXV0aF90aW1lIjoxNzY4MDAyNzIzLCJqdGkiOiJvbnJ0YWM6ZGM4ZmU5NGEtNzQxOC03ZDlhLWQzMmYtY2JjN2I1NDVkMDY3IiwiaXNzIjoiaHR0cDovL2xvY2FsaG9zdDo4MDgwL3JlYWxtcy90aWNrZXRmbG93LXJlYWxtIiwic3ViIjoiYzcwMDc2YzgtNmVlMS00MDNjLWE1ZTMtOTFlN2RhNzhhMzEyIiwidHlwIjoiQmVhcmVyIiwiYXpwIjoiZnJvbnRlbmQiLCJzaWQiOiJwdTNkelZiTjQ3SU1fVXlqUHBWMHo0dXMiLCJzY29wZSI6Im9wZW5pZCBwcm9maWxlIiwic2NwIjpbIm93bjp0aWNrZXRzOmxpc3QiLCJvd246dGlja2V0cy1jb21tZW50czpjcmVhdGUiLCJ0aWNrZXRzOmNyZWF0ZSIsIm93bjp0aWNrZXRzOnJlYWQiLCJkZWZhdWx0LXJvbGVzLXRpY2tldGZsb3ctcmVhbG0iLCJVU0VSIl0sIm5hbWUiOiJicnVubyByYW5hIiwicHJlZmVycmVkX3VzZXJuYW1lIjoiYnJ1bm8iLCJnaXZlbl9uYW1lIjoiYnJ1bm8iLCJmYW1pbHlfbmFtZSI6InJhbmEifQ.RE7KbtPBHT5V6O8myJt2Tg_S5KZ7H4da2TcEv0vZzAnKuo-0iyzUvb_xrFnxakXQxahFKyYxs0_IYNSPDEN8SCM7oKC-0wkjzlosxymFj4_UIHBMzSgPfknAGrEUjN9nHLWG86y7Lyaqd3H3TwiyKqxpTwBEPFVi-j57NtaTT6H_qYJX0UDj4lHUnS4i1rW0LSvSDteEW8EgcV9EtbXe32iImk2niTlpbJeVz2Nw5qlf71OztiYf-L-tZDPp6oQB8A7_SmIwYzIvBbBrN5RJKWzJZfOTzlmjsLFYQBiSAJO8D3VIIz3mkzLAHJJfG9CWQOqRhxeEfyfhFiPkCJwScA
+}
+
+body:json {
+  {
+    "title": "PRECISO DE AJUDA",
+    "description": "Meu USB queimou!"
+  }
+}
+
+settings {
+  encodeUrl: true
+  timeout: 0
+}
